@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+.header-name-img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 30px;
+}
+#heading-img{
+    height: 80px;
+    width: 80px;
+}
+#heading{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+}
+.book-add-btn{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+#add-btn{
+    background-color: rgb(237, 236, 236);
+    color: black;
+    font-size: 20px;
+    outline: none;  
+    border-radius: 8px;
+    border:none;
+    padding: 10px;
+}
+#add-btn:hover{
+    background-color: rgb(225, 220, 220);
+    cursor: pointer;
+}
+
+
+/* Books section */
+.books-section{
+    box-sizing: border-box;
+    background-color: lightgray;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;   
+    gap:35px; 
+}
+.book-holder{
+    box-sizing: border-box  ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    border-left: 8px solid orange;
+    border-radius: 10px;
+    max-height: 170px;
+    min-width: 330px;
+}
+.book-details{
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.book-heading{
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 800;
+}
+.book-author{
+    padding-left: 10px;
+    font-size: 16px;
+    color: #616060;
+}
+.book-pages{
+    color: #636262;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 16px;
+}
+.read-img{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.read-img-btn-unread{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    filter: contrast(0)
+}
+.read-img-btn-read{
+    width: 30px;
+    height: 30px; 
+    filter: contrast(1);
+    cursor: pointer;
+}
+/* .read-img img:hover{
+    filter:contrast(1);
+} */
+.delete-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+} 
+.book-delete{ 
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#footer-text{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* pop-up */
+.backdrop{
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0,0,0,0.2);
+}  
+
+.closed {
+    display: none;
+}
+.new-book-box{
+    border-radius: 10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white ;
+    position: relative;
+    gap: 20px;
+}
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+} 
+#close{ 
+    height: 20px;
+    width: 20px;
+}
+.book-input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    box-sizing: border-box;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(234, 234, 234);
+    width: 100%;
+}
+.input-div{
+    width: 100%;
+}
+.pop-up-heading{    
+    font-size: 32px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 800;
+}
+.page-read{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#count-inp{
+    flex:1;
+}
+.read-btn{
+    font-size: 18px;
+    text-align: center;
+    flex: 1;
+    border: 3px solid rgb(198, 196, 196);
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.read-btn-read{
+    background-color: rgb(35, 188, 35);
+    color: white;
+}
+.read-btn-unread{
+    background-color: white;
+    color: black;
+}
+.create-btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.create-btn{
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(244, 169, 28);
+    color:white;
+    margin-top: 10px;
+    outline: none;
+    border:none;
+}
+.create-btn:hover{
+    background-color: rgb(227, 140, 9);
+    cursor: pointer;
+}

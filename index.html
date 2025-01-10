@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="icon" href="img/asset 1.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="libFn.js" defer></script>
+</head>
+<body>
+    <!-- Header content -->
+    <div class="header-section">
+        <div class="header-name-img">
+            <img src="img/asset 1.svg" alt="lib-logo" id="heading-img">
+            <div id="heading">Library</div>
+        </div>
+        <div class="book-add-btn">
+            <button id="add-btn">+ Add Book</button>
+        </div>
+    </div>
+    
+    <!-- Books section -->
+    <div class="books-section">
+        <!-- <div class="book-holder">
+            <div class="book-details">
+                <div class="book-heading">Harry Potter</div>
+                <div class="book-author">J.K Rowling</div>
+                <div class="book-pages">400</div>
+            </div>
+            <div class="read-img">
+                <img src="img/asset 3.svg" alt="read" class="read-img-btn">
+            </div>
+            <div class="delete-btn">
+                <img src="img/asset 0.svg" alt="close btn" class="book-delete">
+            </div>
+        </div> -->
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div id="footer-text">
+            Copyright © Suryansh Nagar <span id="current-year"></span>
+            <script>
+                document.getElementById("current-year").textContent = new Date().getFullYear();
+            </script>
+        </div>
+    </div>
+    <div class="backdrop closed">
+        <div class="new-book-box">
+            <div class="pop-up-heading">New</div>
+            <form id="add-book-form">
+                <div class="book-input-box">
+                    <div class="input-div">
+                        <input type="text" name="title" placeholder="Title" id="title" required>
+                    </div>
+                    <div class="input-div">
+                        <input type="text" name="author" placeholder="Author" id="author" required>
+                    </div>
+                    <div class="page-read">
+                        <input type="number" name="pages" min="1" id="pages" placeholder="Total count" id="count-inp" required>
+                        <div class="read-btn read-btn-unread">Read</div>
+                    </div>
+                </div>
+                <div class="create-btn-container">
+                    <button class="create-btn">Create</button>
+                </div>
+            </form>
+            <div class="close-btn">
+                <img src="img/asset 0.svg" alt="close btn" id="close">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
