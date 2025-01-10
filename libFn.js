@@ -35,6 +35,9 @@ createForm.addEventListener("submit", (e) => {
     author.value = "";
     pages.value = "";
     read = false;
+    readButton.classList.toggle("read-btn-unread");
+    readButton.classList.toggle("read-btn-read");
+    console.log("reset");
 
     const popup = document.querySelector('.backdrop');
     popup.classList.toggle("closed");
